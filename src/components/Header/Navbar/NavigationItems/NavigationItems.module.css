@@ -1,0 +1,13 @@
+.navigationItemstemsContainer {
+  width: 912px;
+  height: 40 px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: pink; */
+}
+.navigationItemstemsContainer a {
+  text-decoration: none;
+  color: #102851;
+  
+}
