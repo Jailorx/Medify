@@ -31,7 +31,9 @@
 .heroContent_message {
   color: #5c6169;
   font-size: 20px;
+  margin-bottom: 20px;
 }
+
 .heroImage {
   margin-right: 100px;
 }

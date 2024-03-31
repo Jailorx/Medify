@@ -1,5 +1,6 @@
 import styles from "./HeroSection.module.css";
 import heroImage from "../../assets/heroImage.png";
+import Button from "../Button/Button";
 
 const HeroSection = () => {
   return (
@@ -13,6 +14,7 @@ const HeroSection = () => {
           Connect instantly with a 24x7 specialist or choose to video visit a
           particular doctor.
         </p>
+        <Button text="Find Centers" />
       </div>
       <div className={styles.heroImage}>
         <img src={heroImage} alt="hero_Image_of_doctors" />
