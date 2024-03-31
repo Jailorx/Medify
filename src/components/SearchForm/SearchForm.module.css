@@ -10,8 +10,8 @@
   flex-direction: column;
   gap: 50px;
 
-  position: absolute;
-  top: 530px;
+  position: relative;
+  top: -150px;
   left: 135px;
 }
 
