@@ -5,6 +5,14 @@
   box-shadow: 6px 6px 35px 0px #1028511c;
   border-radius: 15px;
   padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  position: absolute;
+  top: 530px;
+  left: 135px;
 }
 
 .searchPanel {
@@ -18,4 +26,8 @@
   font-size: 20px;
   font-weight: 500;
   letter-spaceing: 2%;
+}
+.cards {
+  display: flex;
+  gap: 20px;
 }
