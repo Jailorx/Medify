@@ -1,0 +1,37 @@
+.heroSectionContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  margin-top: 50px;
+  gap: 100px;
+}
+.heroContent {
+  width: 663px;
+  height: 207px;
+  margin-left: 135px;
+  padding: 50px 100px 0 0;
+}
+.heroContent_tag {
+  font-size: 31px;
+  font-weight: 500;
+  color: #102851;
+}
+
+.heroContent_bold {
+  font-size: 56px;
+  font-weight: 700;
+  color: #102851;
+}
+.heroContent_bold span {
+  font-size: 56px;
+  font-weight: 700;
+  color: #2aa7ff;
+}
+.heroContent_message {
+  color: #5c6169;
+  font-size: 20px;
+}
+.heroImage {
+  margin-right: 100px;
+}
