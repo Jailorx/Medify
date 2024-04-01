@@ -1,5 +1,5 @@
 import styles from "./InputField.module.css";
-import searchIcon from "../../assets/search-icon.svg";
+import searchIcon from "../../assets/icon/search-icon.svg";
 
 const InputField = ({ placeholder }) => {
   return (

@@ -2,11 +2,11 @@ import Button from "../Button/Button";
 import Card from "../Card/Card";
 import InputField from "../InputField/InputField";
 import styles from "./SearchForm.module.css";
-import doctorIcon from "../../assets/doctor-icon.svg";
-import ambulanceIcon from "../../assets/ambulance-icon.svg";
-import labsIcon from "../../assets/labs-icon.svg";
-import hospitalIcon from "../../assets/hospital-icon.svg";
-import medicineIcon from "../../assets/medicine-icon.svg";
+import doctorIcon from "../../assets/icon/doctor-icon.svg";
+import ambulanceIcon from "../../assets/icon/ambulance-icon.svg";
+import labsIcon from "../../assets/icon/labs-icon.svg";
+import hospitalIcon from "../../assets/icon/hospital-icon.svg";
+import medicineIcon from "../../assets/icon/medicine-icon.svg";
 
 const SearchForm = () => {
   return (

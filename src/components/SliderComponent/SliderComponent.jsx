@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./SliderComponent.module.css"; // Assuming you have a CSS module file
-import slider1Img from "../../assets/slider1.png";
-import slider2Img from "../../assets/slider2.png";
+import slider1Img from "../../assets/images/slider1.png";
+import slider2Img from "../../assets/images/slider2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";

@@ -1,5 +1,5 @@
 import styles from "./Family.module.css";
-import FamilyResults from "../../assets/family.png";
+import FamilyResults from "../../assets/images/family.png";
 
 const Family = () => {
   return (
