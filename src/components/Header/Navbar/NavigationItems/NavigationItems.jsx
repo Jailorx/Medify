@@ -10,7 +10,7 @@ const NavigationItems = () => {
       <a href="#">Surguries</a>
       <a href="#">Software for Provider</a>
       <a href="#">Facilities</a>
-      <Button text="Login/Signup" />
+      <Button text="My Bookings" />
     </div>
   );
 };
