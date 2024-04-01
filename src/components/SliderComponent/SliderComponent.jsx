@@ -31,11 +31,7 @@ const SliderComponent = () => {
 
   return (
     <div className={styles.sliderContainer}>
-      {" "}
-      {/* Wrap the Swiper in a container */}
       <div className={styles.sliderWrapper}>
-        {" "}
-        {/* Apply margins to this wrapper */}
         <Swiper
           slidesPerView={3}
           spaceBetween={10}
