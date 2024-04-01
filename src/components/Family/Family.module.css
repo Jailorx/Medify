@@ -1,0 +1,31 @@
+.familyContainer {
+  padding: 30px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--color-background);
+}
+.family_content {
+  width: 555px;
+}
+.family_content_tag {
+  color: #2aa7ff;
+  font-size: 17px;
+  font-weight: 600;
+}
+.family_content_tag_bold {
+  color: #1b3c74;
+  font-size: 48px;
+  font-weight: 600;
+}
+.family_content_message {
+  color: #77829d;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-family: Inter;
+
+  line-height: 40.8px;
+}

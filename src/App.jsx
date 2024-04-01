@@ -6,6 +6,7 @@ import SearchForm from "./components/SearchForm/SearchForm";
 import SliderComponent from "./components/SliderComponent/SliderComponent";
 import Specialization from "./components/Specialization/Specialization";
 import News from "./components/News/News";
+import Family from "./components/Family/Family";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Specialization />
       <PatientCaring />
       <News />
+      <Family />
     </div>
   );
 }
