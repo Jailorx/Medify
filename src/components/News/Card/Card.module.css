@@ -1,0 +1,35 @@
+.cardContainer {
+  width: 363px;
+  height: 458px;
+  padding: 0px 0px 20px 0px;
+  border-radius: 0px 0px 10px 10px;
+  border: 1px 0px 0px 0px;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card_content_about {
+  color: #77829d;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.card_content_about_content {
+  color: #1b3c74;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.card_content_doctor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1b3c74;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}

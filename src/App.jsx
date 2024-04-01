@@ -5,6 +5,7 @@ import PatientCaring from "./components/PatientCaring/PatientCaring";
 import SearchForm from "./components/SearchForm/SearchForm";
 import SliderComponent from "./components/SliderComponent/SliderComponent";
 import Specialization from "./components/Specialization/Specialization";
+import News from "./components/News/News";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <SliderComponent />
       <Specialization />
       <PatientCaring />
+      <News />
     </div>
   );
 }
