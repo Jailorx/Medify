@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import styles from "./FAQ.module.css";
 import FAQImage from "../../assets/images/faq-image.png";
 import Accordion from "@mui/material/Accordion";
@@ -7,6 +8,12 @@ import Typography from "@mui/material/Typography";
 import AddIcon from "@mui/icons-material/Add";
 
 const FAQ = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleAccordionChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   return (
     <div className={styles.faqWrapper}>
       <p className={styles.faq_category}>Get Your Answer</p>
@@ -16,9 +23,13 @@ const FAQ = () => {
           <img src={FAQImage} alt="picture_for_FAQ_section" />
         </div>
         <div className={styles.faq_accordion}>
-          <Accordion>
+          <Accordion
+            expanded={expanded === "panel1"}
+            onChange={handleAccordionChange("panel1")}
+          >
             <AccordionSummary
               expandIcon={<AddIcon style={{ backgroundColor: "#2AA7FF" }} />}
+              aria-controls="panel1-content"
             >
               <Typography
                 style={{ color: "#1B3C74", fontWeight: 600, fontSize: "18px" }}
@@ -42,9 +53,13 @@ const FAQ = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion
+            expanded={expanded === "panel2"}
+            onChange={handleAccordionChange("panel2")}
+          >
             <AccordionSummary
               expandIcon={<AddIcon style={{ backgroundColor: "#2AA7FF" }} />}
+              aria-controls="panel2-content"
             >
               <Typography
                 style={{ color: "#1B3C74", fontWeight: 600, fontSize: "18px" }}
@@ -68,9 +83,13 @@ const FAQ = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion
+            expanded={expanded === "panel3"}
+            onChange={handleAccordionChange("panel3")}
+          >
             <AccordionSummary
               expandIcon={<AddIcon style={{ backgroundColor: "#2AA7FF" }} />}
+              aria-controls="panel3-content"
             >
               <Typography
                 style={{ color: "#1B3C74", fontWeight: 600, fontSize: "18px" }}
@@ -94,9 +113,13 @@ const FAQ = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion
+            expanded={expanded === "panel4"}
+            onChange={handleAccordionChange("panel4")}
+          >
             <AccordionSummary
               expandIcon={<AddIcon style={{ backgroundColor: "#2AA7FF" }} />}
+              aria-controls="panel4-content"
             >
               <Typography
                 style={{ color: "#1B3C74", fontWeight: 600, fontSize: "18px" }}
