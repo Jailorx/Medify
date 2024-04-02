@@ -1,8 +1,15 @@
-.faqContainer {
+.faqWrapper {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faqContainer {
+  width: 1120px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -16,4 +23,11 @@
   font-size: 48px;
   font-weight: 600;
   color: #1b3c74;
+}
+.faq_accordion {
+  width: 484px;
+  height: 499.84px;
+}
+.icon .MuiSvgIcon-root {
+  color: #2aa7ff;
 }
