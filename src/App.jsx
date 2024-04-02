@@ -7,6 +7,7 @@ import SliderComponent from "./components/SliderComponent/SliderComponent";
 import Specialization from "./components/Specialization/Specialization";
 import News from "./components/News/News";
 import Family from "./components/Family/Family";
+import FAQ from "./components/FAQ/FAQ";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <PatientCaring />
       <News />
       <Family />
+      <FAQ />
     </div>
   );
 }
