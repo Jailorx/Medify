@@ -1,13 +1,18 @@
 .navigationItemstemsContainer {
   width: 912px;
-  height: 40 px;
+  min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: pink; */
 }
 .navigationItemstemsContainer a {
   text-decoration: none;
   color: #102851;
-  
+}
+
+.navigationItemstemsContainer.vertical {
+  min-width: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }

@@ -1,5 +1,5 @@
 .heroSectionContainer {
-  width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: start;

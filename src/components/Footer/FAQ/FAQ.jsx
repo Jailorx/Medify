@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./FAQ.module.css";
-import FAQImage from "../../assets/images/faq-image.png";
+import FAQImage from "../../../assets/images/faq-image.png";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";

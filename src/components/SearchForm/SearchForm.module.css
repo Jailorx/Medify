@@ -1,6 +1,6 @@
 .searchFormContainer {
-  width: 1170px;
-  height: 429px;
+  max-width: 1170px;
+  max-height: 429px;
   background: #fff;
   box-shadow: 6px 6px 35px 0px #1028511c;
   border-radius: 15px;
