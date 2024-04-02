@@ -26,7 +26,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Enter your phone number"
-                maxlength="10"
+                maxLength="10"
               />
             </div>
             <Button text="Send SMS" />
