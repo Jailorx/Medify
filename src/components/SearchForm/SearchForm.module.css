@@ -1,6 +1,6 @@
 .searchFormContainer {
   max-width: 1170px;
-  max-height: 429px;
+  min-height: 429px;
   background: #fff;
   box-shadow: 6px 6px 35px 0px #1028511c;
   border-radius: 15px;
@@ -12,13 +12,8 @@
 
   position: relative;
   top: -150px;
-  left: 135px;
-}
-
-.searchPanel {
-  display: flex;
-  justify-content: end;
-  gap: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .content {
   text-align: center;
@@ -27,7 +22,40 @@
   font-weight: 500;
   letter-spaceing: 2%;
 }
+
+@media (max-width: 768px) {
+  .searchFormContainer {
+    padding: 30px;
+    top: 0;
+    left: 0;
+    transform: none;
+    border-radius: 0;
+  }
+}
+
+.searchPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content {
+  text-align: center;
+  color: #102851;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2%;
+}
+
 .cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    justify-content: space-around;
+  }
 }
