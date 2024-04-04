@@ -50,6 +50,14 @@ const SearchForm = () => {
     setSelectedCity(e.target.value);
   };
 
+  const handleSearch = async () => {
+    const responseSearch =
+      await fetch(`https://meddata-backend.onrender.com/data?state=${selectedState}&city=${selectedCity}
+    `);
+    const dataSearch = await responseSearch.json();
+    console.log(dataSearch);
+  };
+
   return (
     <div className={styles.searchFormContainer}>
       <div className={styles.searchPanel}>
@@ -65,7 +73,9 @@ const SearchForm = () => {
               ))}
             </select>
           ) : (
-            <input type="text" placeholder="State" />
+            <select>
+              <option value="">Select City</option>
+            </select>
           )}
         </div>
         <div className={styles.inputFieldContainer}>
@@ -80,14 +90,12 @@ const SearchForm = () => {
               ))}
             </select>
           ) : (
-            <input
-              type="text"
-              placeholder="City"
-              disabled={cities.length === 0}
-            />
+            <select>
+              <option value="">Select City</option>
+            </select>
           )}
         </div>
-        <Button text="Search" />
+        <Button text="Search" onClick={handleSearch} />
       </div>
 
       <div className={styles.selectedInfo}>
