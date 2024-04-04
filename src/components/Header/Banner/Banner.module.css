@@ -8,3 +8,9 @@
 
   color: #ffffff;
 }
+
+@media (max-width: 1180px) {
+  .bannerContainer {
+    padding: 10px;
+  }
+}
