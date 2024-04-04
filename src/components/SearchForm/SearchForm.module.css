@@ -22,18 +22,6 @@
   font-weight: 500;
   letter-spaceing: 2%;
 }
-
-@media (max-width: 768px) {
-  .searchFormContainer {
-    width: 100%;
-    padding: 30px;
-    top: 0;
-    left: 0;
-    transform: none;
-    border-radius: 0;
-  }
-}
-
 .searchPanel {
   display: flex;
   align-items: center;
@@ -80,4 +68,14 @@ select {
 }
 option {
   color: #abb6c7;
+}
+
+@media (max-width: 768px) {
+  .searchFormContainer {
+    width: 100%;
+    padding: 30px;
+    position: static;
+    transform: none;
+    border-radius: 0;
+  }
 }
