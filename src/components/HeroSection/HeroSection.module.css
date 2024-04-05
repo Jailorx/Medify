@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  padding: 50px;
 }
 
 .heroContent {
@@ -35,8 +36,8 @@
 }
 
 .heroImage {
-  width: 100%;
   max-width: 500px;
+  max-height: 500px;
   margin-top: 50px;
 }
 
