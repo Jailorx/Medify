@@ -1,7 +1,7 @@
 .familyContainer {
   padding: 30px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,4 +28,27 @@
   font-family: Inter;
 
   line-height: 40.8px;
+}
+
+@media screen and (max-width: 792px) {
+  .familyContainer {
+    flex-direction: column;
+  }
+  .family_content {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .family_content_tag_bold {
+    font-size: 24px;
+  }
+
+  .family_content_message {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 556px) {
+  .family_content_achievements {
+    display: none;
+  }
 }
