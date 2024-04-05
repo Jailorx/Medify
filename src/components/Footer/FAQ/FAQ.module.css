@@ -44,3 +44,11 @@
     max-width: 90%;
   }
 }
+@media screen and (max-width: 601px) {
+  .faqWrapper {
+    gap: 20px;
+  }
+  .faqImage {
+    display: none;
+  }
+}
