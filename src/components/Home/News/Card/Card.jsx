@@ -1,6 +1,6 @@
 import styles from "./Card.module.css";
-import CardPic from "../../../assets/images/demo-card.png";
-import DoctorImg from "../../../assets/images/doctor.jpg";
+import CardPic from "../../../../assets/images/demo-card.png";
+import DoctorImg from "../../../../assets/images/doctor.jpg";
 
 const Card = () => {
   return (

@@ -1,6 +1,6 @@
 import styles from "./PatientCaring.module.css";
-import CaringImage from "../../assets/images/patient-caring.png";
-import tickIcon from "../../assets/icon/tick-icon.svg";
+import CaringImage from "../../../assets/images/patient-caring.png";
+import tickIcon from "../../../assets/icon/tick-icon.svg";
 
 const PatientCaring = () => {
   return (

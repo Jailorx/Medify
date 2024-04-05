@@ -1,14 +1,14 @@
 import styles from "./Specialization.module.css";
 import Card from "../Card/Card";
 import { useState, useEffect } from "react";
-import dentistryIcon from "../../assets/icon/dentistry-icon.svg";
-import cardiologyIcon from "../../assets/icon/heart-icon.svg";
-import mriIcon from "../../assets/icon/mri-icon.svg";
-import bloodTestIcon from "../../assets/icon/bloodsample-icon.svg";
-import piscologistIcon from "../../assets/icon/immune-icon.svg";
-import xRayIcon from "../../assets/icon/xray-icon.svg";
-import careIcon from "../../assets/icon/stethoscope-icon.svg";
-import Button from "../Button/Button";
+import dentistryIcon from "../../../assets/icon/dentistry-icon.svg";
+import cardiologyIcon from "../../../assets/icon/heart-icon.svg";
+import mriIcon from "../../../assets/icon/mri-icon.svg";
+import bloodTestIcon from "../../../assets/icon/bloodsample-icon.svg";
+import piscologistIcon from "../../../assets/icon/immune-icon.svg";
+import xRayIcon from "../../../assets/icon/xray-icon.svg";
+import careIcon from "../../../assets/icon/stethoscope-icon.svg";
+import Button from "../../Button/Button";
 
 const Specialization = () => {
   const [cards, setCards] = useState([]);

@@ -1,6 +1,6 @@
 import styles from "./HeroSection.module.css";
-import heroImage from "../../assets/images/heroImage.png";
-import Button from "../Button/Button";
+import heroImage from "../../../assets/images/heroImage.png";
+import Button from "../../Button/Button";
 
 const HeroSection = () => {
   return (
