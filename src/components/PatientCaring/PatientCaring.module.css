@@ -62,14 +62,20 @@
 
   .content_tag_bold,
   .content_tag_bold span {
-    font-size: 28px; /* Further reduced font size for smaller screens */
+    font-size: 28px;
   }
 
   .content_message {
-    font-size: 16px; /* Reduced font size for smaller screens */
+    font-size: 16px;
   }
 
   .content_list p {
-    font-size: 14px; /* Reduced font size for smaller screens */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  .pictures {
+    display: none;
   }
 }
