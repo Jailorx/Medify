@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 
 const BookingContext = React.createContext();
 
-const BookingContextProvider = ({ children }) => {
+export const BookingContextProvider = ({ children }) => {
   const [bookings, setBookings] = useState([]);
 
   return (
@@ -12,4 +12,4 @@ const BookingContextProvider = ({ children }) => {
   );
 };
 
-export const useBookingContext = useContext(BookingContext);
+export const useBookingContext = () => useContext(BookingContext);

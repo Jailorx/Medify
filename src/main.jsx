@@ -13,13 +13,30 @@ import FindDoctors from "./components/FindDoctors/FindDoctors.jsx";
 import Booking from "./components/Booking/Booking.jsx";
 import Hospital from "./components/Hospital/Hospital.jsx";
 
+import { HospitalContextProvider } from "./contexts/HospitalContext";
+import { BookingContextProvider } from "./contexts/BookingContext";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="doctors" element={<FindDoctors />} />
-      <Route path="hospitals" element={<Hospital />} />
-      <Route path="bookings" element={<Booking />} />
+      <Route
+        path="hospitals"
+        element={
+          <HospitalContextProvider>
+            <Hospital />
+          </HospitalContextProvider>
+        }
+      />
+      <Route
+        path="bookings"
+        element={
+          <BookingContextProvider>
+            <Booking />
+          </BookingContextProvider>
+        }
+      />
     </Route>
   )
 );

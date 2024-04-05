@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 
 const HospitalContext = React.createContext();
 
-const HospitalContextProvider = ({ children }) => {
+export const HospitalContextProvider = ({ children }) => {
   const [hospitals, setHospitals] = useState([]);
 
   return (
@@ -12,4 +12,4 @@ const HospitalContextProvider = ({ children }) => {
   );
 };
 
-export const useHospitalContext = useContext(HospitalContext);
+export const useHospitalContext = () => useContext(HospitalContext);
