@@ -1,5 +1,6 @@
 import Button from "../../../Button/Button";
 import styles from "./NavigationItems.module.css";
+import { Link, NavLink } from "react-router-dom";
 
 const NavigationItems = ({ vertical }) => {
   return (
