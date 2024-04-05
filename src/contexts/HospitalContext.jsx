@@ -1,9 +1,13 @@
-import React, { useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 
-const HospitalContext = React.createContext();
+const HospitalContext = createContext();
 
 export const HospitalContextProvider = ({ children }) => {
   const [hospitals, setHospitals] = useState([]);
+  useEffect(() => {
+    console.log("Hospitals updated:", hospitals);
+    console.log(hospitals);
+  }, [hospitals]);
 
   return (
     <HospitalContext.Provider value={{ hospitals, setHospitals }}>
