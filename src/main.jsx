@@ -11,12 +11,14 @@ import Layout from "./Layout.jsx";
 import Home from "./components/Home/Home.jsx";
 import FindDoctors from "./components/FindDoctors/FindDoctors.jsx";
 import Booking from "./components/Booking/Booking.jsx";
+import Hospital from "./components/Hospital/Hospital.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="doctors" element={<FindDoctors />} />
+      <Route path="hospitals" element={<Hospital />} />
       <Route path="bookings" element={<Booking />} />
     </Route>
   )
