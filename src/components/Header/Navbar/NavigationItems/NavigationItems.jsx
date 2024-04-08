@@ -1,21 +1,35 @@
 import Button from "../../../Button/Button";
 import styles from "./NavigationItems.module.css";
-import { Link, NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 
 const NavigationItems = ({ vertical }) => {
   return (
     <div
-      className={`${styles.navigationItemstemsContainer} ${
+      className={`${styles.navigationItemsContainer} ${
         vertical ? styles.vertical : ""
       }`}
     >
-      <a href="#">Find Doctors</a>
-      <a href="#">Hospitals</a>
-      <a href="#">Medicines</a>
-      <a href="#">Surgeries</a>
-      <a href="#">Software for Providers</a>
-      <a href="#">Facilities</a>
-      <Button text="My Bookings" />
+      <NavLink to="/doctors" activeClassName={styles.activeLink}>
+        Find Doctors
+      </NavLink>
+      <NavLink to="/hospitals" activeClassName={styles.activeLink}>
+        Hospitals
+      </NavLink>
+      <NavLink to="#" activeClassName={styles.activeLink}>
+        Medicines
+      </NavLink>
+      <NavLink to="#" activeClassName={styles.activeLink}>
+        Surgeries
+      </NavLink>
+      <NavLink to="#" activeClassName={styles.activeLink}>
+        Software for Providers
+      </NavLink>
+      <NavLink to="#" activeClassName={styles.activeLink}>
+        Facilities
+      </NavLink>
+      <NavLink to="/bookings" activeClassName={styles.activeLink}>
+        <Button text="My Bookings" />
+      </NavLink>
     </div>
   );
 };

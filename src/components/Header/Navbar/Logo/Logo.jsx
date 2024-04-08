@@ -1,7 +1,12 @@
 import WebsiteLogo from "../../../../assets/icon/medify-logo.svg";
+import { NavLink } from "react-router-dom";
 
 const Logo = () => {
-  return <img src={WebsiteLogo} alt="medify_website_logo" />;
+  return (
+    <NavLink to="/">
+      <img src={WebsiteLogo} alt="medify_website_logo" />
+    </NavLink>
+  );
 };
 
 export default Logo;

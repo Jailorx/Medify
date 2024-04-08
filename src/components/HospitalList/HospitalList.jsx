@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./HospitalList.module.css";
-import HospitalCard from "../../HospitalCard/HospitalCard";
-import { useHospitalContext } from "../../../contexts/HospitalContext";
-import oralDay from "../../../assets/images/oral-day-banner.png";
+import HospitalCard from "../HospitalCard/HospitalCard";
+import { useHospitalContext } from "../../contexts/HospitalContext";
+import oralDay from "../../assets/images/oral-day-banner.png";
 
 const HospitalList = () => {
   const { hospitals } = useHospitalContext();
