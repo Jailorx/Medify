@@ -16,7 +16,8 @@
   gap: 20px;
 }
 .inputFieldContainer {
-  width: 285px;
+  width: 100%;
+  max-width: 285px;
   height: 46px;
 
   display: flex;
@@ -39,4 +40,16 @@ select {
 }
 option {
   color: #abb6c7;
+}
+
+@media (max-width: 585px) {
+  .searchPanelContainer {
+    width: 90%;
+  }
+
+  .searchPanel {
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
