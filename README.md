@@ -1,8 +1,37 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#  MEDIFY - Medical Center Slot Booking Platform
 
-Currently, two official plugins are available:
+The objective of this project is to build a React-based web application that allows users to find medical centers in a specific state and city across the USA and book appointments.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Deployment
+
+Project is deployed in vercel.
+
+```bash
+  https://medify-ten.vercel.app/
+```
+
+
+## Tech Stack
+
+- React
+- Javascript
+- Context API
+- CSS modules
+- react-router
+- context API
+
+
+
+## Features
+
+- Responsive design for various screen sizes.
+- Search functionality that helps select your state and city to find hospitals and doctors near you.
+
+
+
+## Authors
+
+- [@jailorx](https://www.github.com/jailorx)
+
